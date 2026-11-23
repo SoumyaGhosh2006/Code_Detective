@@ -1,0 +1,11 @@
+export { parseStackTrace } from './agent/traceParser.js';
+export { backtrackFailureChain } from './agent/symbolFollower.js';
+export { runAutopsyAgent, buildSystemPrompt, loadPonytailRules } from './agent/orchestrator.js';
+export { stripCodeSyntax, sanitizeAutopsyPayload } from './agent/validator.js';
+export { renderAutopsyReport } from './ui/renderer.js';
+export { scrubSecrets } from './security/secretScrubber.js';
+export { isSafePath, toRelativeSafePath } from './security/pathGuard.js';
+export { loadConfig, saveConfig, toggleActive } from './config/userConfig.js';
+export { pingOllama, getInstallInstructions } from './preflight/ollamaCheck.js';
+export { runCommandWithGhost } from './shell/runner.js';
+export { startMonitoredSession } from './shell/session.js';

@@ -1,0 +1,28 @@
+{
+  "name": "ghost-trace-cli",
+  "version": "1.0.0",
+  "description": "Ghost in the Machine: Autonomous, local-first terminal autopsy agent with Ponytail anti-over-engineering rules and zero-code guardrails",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "ghost": "./bin/ghost.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "test": "node --test test/**/*.test.js",
+    "start": "node bin/ghost.js"
+  },
+  "keywords": [
+    "terminal",
+    "debugging",
+    "autopsy",
+    "ollama",
+    "ponytail",
+    "zero-code",
+    "cli"
+  ],
+  "author": "Ghost Trace Team",
+  "license": "MIT"
+}
